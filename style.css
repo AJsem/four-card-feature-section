@@ -1,0 +1,135 @@
+    /*----------DEFAULT RESET---------*/
+    * {
+      padding: 0; 
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      font-size: 62.5%;
+    }
+
+    :root {
+      /*--bg-color: hsl(212, 6%, 44%);*/
+      --header-color: hsl(234, 12%, 34%);
+      --box-color: hsl(0, 0%, 100%);
+      --bg-color: hsl(0, 0%, 98%);
+      --text-color: hsl(234, 12%, 34%);
+      --red: hsl(0, 78%, 62%);
+      --cyan: hsl(180, 62%, 55%);
+      --orange: hsl(34, 97%, 64%);
+      --blue: hsl(212, 86%, 64%);
+    }
+
+    body {
+      font-size: 1.5rem;
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      flex-direction: column;
+      width: 100vw;
+      min-height: 100vh;
+      padding: 3rem;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+    }
+
+    /*----------HERO SECTION----------*/
+    .hero-section {
+      text-align: center;
+      width: 95%;
+      max-width: 38rem;
+    }
+
+    .hero-section .header-light {
+      font-weight: 200;
+    }
+
+    .hero-section .header {
+      font-weight: 600;
+      text-shadow: 1px 2px 30px rgba(145,84,88,0.4);
+    }
+
+    .hero-section p {
+      margin: 1.5rem 0 1rem;
+      font-size: 1.2rem;
+    }
+
+    /*-------------BOX STYLING------------*/
+    .content-box {
+      background-color: var(--box-color);
+      border-radius: .5rem;
+      padding: 3rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 2.5rem 0;
+      gap: 0.5rem;
+      border-top: 3px solid darkblue;
+      box-shadow: 0px 12px 14px -1px rgba(200, 220, 220, 0.75);
+      max-width: 30rem;
+      max-height: 23rem;
+    }
+
+    .content-box p {
+      font-size: 1.2rem;
+    }
+
+    .content-box img {
+      margin: 3rem 0 1rem;
+      align-self: flex-end;
+    }
+
+    .content-box1 {
+      border-top-color: var(--cyan);
+    }
+
+    .content-box2 {
+      border-top-color: var(--red);
+    }
+
+    .content-box3 {
+      border-top-color: var(--orange);
+    }
+
+    .content-box4 {
+      border-top-color: var(--blue);
+    }
+
+    /*-------------RESPONSIVE DESIGN-----------*/
+    @media (min-width: 768px) {
+      body {
+        padding: 1rem;
+      }
+      .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 2.2rem;
+        background-color: rgba(200, 220, 220, 0.2);
+        box-shadow: 0px 0px 70px 36px rgba(200, 220, 220, 0.2);
+        height: 500px;
+        align-content: center;
+      }
+
+      .box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .content-box2, .content-box3 {
+        margin: 1.2rem 0;
+      }
+
+        /*----------HERO SECTION----------*/
+
+      .hero-section p {
+        margin: 0.5rem 0 2.3rem;
+        font-size: 1.2rem;
+      }
+    }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
